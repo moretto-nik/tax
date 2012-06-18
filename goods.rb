@@ -13,7 +13,7 @@ class Goods
   def total
     total = 0
     @items.each do |good|
-      total += /\d{1,}.\d{1,}/.match(good)[0].to_f
+      total += good.value
     end
     total
   end
